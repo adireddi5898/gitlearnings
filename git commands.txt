@@ -1,0 +1,53 @@
+					GIT Commands
+
+1. Basic Git Commands
+	git init – Initializes a new Git repository in the current directory.
+	git clone <repository-url> – Clones an existing Git repository to your local machine.
+
+2. Staging & Committing
+	git add <file> – Stages a specific file for commit.
+	git add . – Stages all changes (new, modified, and deleted files).
+	git commit -m "message" – Commits staged changes with a descriptive message.
+	git commit --amend -m "new message" – Modifies the last commit message.
+
+3. Branching & Merging
+	git branch – Lists all branches in the repository.
+	git branch <branch-name> – Creates a new branch.
+	git checkout <branch-name> – Switches to the specified branch.
+	git switch <branch-name> – Alternative to git checkout for switching branches.
+	git merge <branch-name> – Merges the specified branch into the current branch.
+	git rebase <branch-name> – Reapplies commits on top of another base branch.
+
+4. Viewing History & Changes
+	git log – Shows commit history.
+	git log --oneline --graph – Displays a compact commit history.
+	git status – Shows the current status of the working directory and staging area.
+	git diff – Shows differences between working directory and staged changes.
+	git diff --staged – Shows differences between staged changes and the last commit.
+
+5. Undoing Changes
+	git reset <file> – Unstages a file while keeping changes.
+	git reset --hard <commit-hash> – Resets repository to a specific commit, discarding changes.
+	git revert <commit-hash> – Creates a new commit that undoes changes from a previous commit.
+
+6. Working with Remote Repositories
+	git remote -v – Lists remote repositories.
+	git remote add <name> <url> – Adds a new remote repository.
+	git pull origin <branch-name> – Fetches and merges changes from the remote branch.
+	git push origin <branch-name> – Pushes changes to the remote repository.
+	git push -u origin <branch-name> – Sets the upstream branch for future pushes.
+
+7. Stashing & Cleaning
+	git stash – Saves uncommitted changes for later use.
+	git stash pop – Applies stashed changes and removes them from the stash.
+	git clean -f – Removes untracked files from the working directory.
+
+8. Tagging
+	git tag <tag-name> – Creates a lightweight tag.
+	git tag -a <tag-name> -m "message" – Creates an annotated tag.
+	git push origin <tag-name> – Pushes a tag to the remote repository.
+
+9. Advanced Commands
+	git cherry-pick <commit-hash> – Applies a specific commit to the current branch.
+	git bisect start – Starts a binary search to find a faulty commit.
+	git reflog – Shows a log of recent changes, even deleted ones.
