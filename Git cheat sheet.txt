@@ -1,3 +1,0 @@
-git clone "<URL>" -> to clone a repository
-git add -u        -> to add new files
-git commit -m "<Commit message>" -> to commit the changes
